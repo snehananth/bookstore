@@ -14,3 +14,5 @@ class Subscription(BaseModel):
     member = models.ForeignKey(Member)
     book = models.ForeignKey(Book)
     count = models.IntegerField(default=1)
+
+    objects = models.Manager()

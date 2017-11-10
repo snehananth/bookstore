@@ -16,4 +16,4 @@ class Book(BaseModel):
     is_available = models.BooleanField(default=True)
     quantity = models.IntegerField(default=0)
 
-    default_manager = models.Manager()
+    objects = models.Manager()
